@@ -1,0 +1,257 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <link rel = "stylesheet" href = "./styles.css">
+    </head>
+    <body>
+      <nav id = "navbar"><header>HTML Documentation</header>
+      <ul>
+        <li><a class = "nav-link" href = "#Introduction">Introduction</a></li>
+        <li><a class = "nav-link" href = "#Getting_Started_with_HTML">Getting Started with HTML</a></li>
+        <li><a class = "nav-link" href = "#What_is_in_the_head?_Metadata_in_HTML">What is in the head? Metadata in HTML</a></li>
+        <li><a class = "nav-link" href = "#Text_Fundamentals">Text Fundamentals</a></li>
+        <li><a class = "nav-link" href = "#Creating_Hyperlinks">Creating Hyperlinks</a></li>
+        <li><a class = "nav-link" href = "#Advanced_Text_Formatting">Advanced Text Formatting</a></li>
+        <li><a class = "nav-link" href = "#Document_and_Website_Structure">Document and Website Structure</a></li>
+        <li><a class = "nav-link" href = "#Debugging">Debugging</a></li>
+        <li><a class = "nav-link" href = "#Reference">Reference</a></li>
+        </ul>
+      </nav>
+      <main id = "main-doc">
+        <section class = "main-section" id = "Introduction"><header>Introduction</header><p>At its heart, HTML is a language made up of elements, which can be applied to pieces of text to give them different meaning in a document (Is it a paragraph? Is it a bulleted list? Is it part of a table?), structure a document into logical sections (Does it have a header? Three columns of content? A navigation menu?), and embed content such as images and videos into a page.</p>
+        <p></section>
+        <section class = "main-section" id = "Getting_Started_with_HTML"><header>Getting Started with HTML</header><p>HTML (HyperText Markup Language) is a markup language that tells web browsers how to structure the web pages you visit. It can be as complicated or as simple as the web developer wants it to be. HTML consists of a series of elements, which you use to enclose, wrap, or mark up different parts of content to make it appear or act in a certain way. The enclosing tags can make content into a hyperlink to connect to another page, italicize words, and so on. For example, consider the following line of text:</p>
+        <code>My cat is very grumpy</code>
+        <p>If we wanted the text to stand by itself, we could specify that it is a paragraph by enclosing it in a paragraph (p) element:</p>
+        <code>&lt;p&gtMy cat is very grumpy&lt;/p&gt</code>
+        <p>The anatomy of our element is:</p>
+        <ul>
+          <li><strong>The opening tag:</strong> This consists of the name of the element (in this example, p for paragraph), wrapped in opening and closing angle brackets. This opening tag marks where the element begins or starts to take effect. In this example, it precedes the start of the paragraph text.</li>
+          <li><strong>The content:</strong> This is the content of the element. In this example, it is the paragraph text.</li>
+          <li><strong>The closing tag:</strong> This is the same as the opening tag, except that it includes a forward slash before the element name. This marks where the element ends. Failing to include a closing tag is a common beginner error that can produce peculiar results.</li>
+          </ul>
+          <p>The element is the opening tag, followed by content, followed by the closing tag.</p>
+        </section>
+        <section class = "main-section" id = "What_is_in_the_head?_Metadata_in_HTML"><header>What is in the head? Metadata in HTML</header><p>The head of an HTML document is the part that is not displayed in the web browser when the page is loaded. It contains information such as the page &lt;title>, links to CSS (if you choose to style your HTML content with CSS), links to custom favicons, and other metadata (data about the HTML, such as the author, and important keywords that describe the document). Web browsers use information contained in the head to render the HTML document correctly. In this article we'll cover all of the above and more, in order to give you a good basis for working with markup.</p>
+        <code>&lt!doctype html>
+&lthtml lang="en-US">
+  &lthead>
+    &ltmeta charset="utf-8" />
+    &lttitle>My test page&lt/title>
+  &lt/head>
+  &ltbody>
+    &ltp>This is my page&lt/p>
+  &lt/body>
+&lt/html>
+</code>
+<p>The HTML head is the contents of the head element. Unlike the contents of the body element (which are displayed on the page when loaded in a browser), the head's content is not displayed on the page. Instead, the head's job is to contain metadata about the document. In the above example, the head is quite small:</p>
+<code> &lthead>
+  &ltmeta charset="utf-8" />
+  &lttitle>My test page</title>
+&lt/head>
+</code>
+<p>In larger pages however, the head can get quite large. Try going to some of your favorite websites and use the developer tools to check out their head contents. Our aim here is not to show you how to use everything that can possibly be put in the head, but rather to teach you how to use the major elements that you'll want to include in the head, and give you some familiarity.</p>
+</section>
+        <section class = "main-section" id = "Text_Fundamentals"><header>Text Fundamentals</header><p>One of HTML's main jobs is to give text structure so that a browser can display an HTML document the way its developer intends. This article explains the way HTML can be used to structure a page of text by adding headings and paragraphs, emphasizing words, creating lists, and more.</p>
+        <p>Most structured text consists of headings and paragraphs, whether you are reading a story, a newspaper, a college textbook, a magazine, etc. Structured content makes the reading experience easier and more enjoyable.In HTML, each paragraph has to be wrapped in a p element, like so:</p>
+        <code>&ltp>I am a paragraph, oh yes I am.&lt/p>
+</code>
+<p>Each heading has to be wrapped in a heading element:</p>
+<code>&lth1>I am the title of the story.&lt/h1></code>
+<p>There are six heading elements: h1, h2, h3, h4, h5, and h6. Each element represents a different level of content in the document; &lth1> represents the main heading, &lth2> represents subheadings, &lth3> represents sub-subheadings, and so on.</p>
+</section>
+        <section class = "main-section" id = "Creating_Hyperlinks"><header>Creating Hyperlinks</header><p>Hyperlinks are really important — they are what makes the Web a web. This article shows the syntax required to make a link, and discusses link best practices.</p><p>Hyperlinks are one of the most exciting innovations the Web has to offer. They've been a feature of the Web since the beginning, and are what makes the Web a web. Hyperlinks allow us to link documents to other documents or resources, link to specific parts of documents, or make apps available at a web address. Almost any web content can be converted to a link so that when clicked or otherwise activated the web browser goes to another web address (URL). </p>
+        <p>A basic link is created by wrapping the text or other content inside an &lta> element and using the <strong>href</strong> attribute, also known as a Hypertext Reference, or target, that contains the web address.</p>
+        <code>&ltp>
+  I'm creating a link to
+  &lta href="https://www.mozilla.org/en-US/">the Mozilla homepage&lt/a>.
+&lt/p>
+</code>
+<p>This gives us the following result:
+I'm creating a link to <a href = "https://www.mozilla.org/en-US/" target = "_blank">the Mozilla homepage</a>.</p>
+<p>There are also:
+  <ul>
+    <li><a href = "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#anatomy_of_a_link" target = "_blank">block-level links</a></li> <li><a href = "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Creating_hyperlinks#anatomy_of_a_link" target = "_blank">image links</a></li></ul></p>
+</section>
+        <section class = "main-section" id = "Advanced_Text_Formatting"><header>Advanced Text Formatting</header><p>There are many other elements in HTML for formatting text, which we didn't get to in the HTML text fundamentals article. The elements described in this article are less known, but still useful to know about (and this is still not a complete list by any means). Here you'll learn about marking up quotations, description lists, computer code and other related text, subscript and superscript, contact information, and more. <p>In HTML text fundamentals, we walked through how to mark up basic lists in HTML, and we mentioned the third type of list you'll occasionally come across — description lists. The purpose of these lists is to mark up a set of items and their associated descriptions, such as terms and definitions, or questions and answers. Let's look at an example of a set of terms and definitions:</p></p>
+        <code>
+          <dl>
+            <dt>soliloquy</dt>
+  <dd>
+    In drama, where a character speaks to themselves, representing their inner
+    thoughts or feelings and in the process relaying them to the audience (but
+    not to other characters.)
+    </dd>
+  <dt>monologue</dt>
+  <dd>
+    In drama, where a character speaks their thoughts out loud to share them
+    with the audience and any other characters present.
+  </dd>
+  <dt>aside</dt>
+  <dd>
+    In drama, where a character shares a comment only with the audience for
+    humorous or dramatic effect. This is usually a feeling, thought, or piece of
+    additional background information.
+  </dd>
+</dl>
+</code>
+<p>Description lists use a different wrapper than the other list types — <strong>&ltdl></strong>; in addition each term is wrapped in a <strong>&ltdt></strong> (description term) element, and each description is wrapped in a <strong>&ltdd></strong> (description definition) element.
+Let's finish marking up our example:</p>
+<code>&ltdl>
+  &ltdt>soliloquy&lt/dt>
+  &ltvdd>
+    In drama, where a character speaks to themselves, representing their inner
+    thoughts or feelings and in the process relaying them to the audience (but
+    not to other characters.)
+  &lt/dd>
+  &ltdt>monologue&lt/dt>
+  &ltdd>
+    In drama, where a character speaks their thoughts out loud to share them
+    with the audience and any other characters present.
+  &lt/dd>
+  &ltdt>aside&lt/dt>
+  &ltdd>
+    In drama, where a character shares a comment only with the audience for
+    humorous or dramatic effect. This is usually a feeling, thought, or piece of
+    additional background information.
+  &lt/dd>
+&lt/dl>
+</code>
+<p>The browser default styles will display description lists with the descriptions indented somewhat from the terms.</p>
+<code>soliloquy
+    In drama, where a character speaks to themselves, representing their inner thoughts or feelings and in the process relaying them to the audience (but not to other characters.) 
+monologue
+    In drama, where a character speaks their thoughts out loud to share them with the audience and any other characters present. 
+aside
+    In drama, where a character shares a comment only with the audience for humorous or dramatic effect. This is usually a feeling, thought, or piece of additional background information. 
+</code>
+<p>And this are a few of the steps about Text Formatting</p>
+<p>More about it:<ul>
+  <li><a href = "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting#quotations" target = "_blank">Quotations</a></li>
+  <li><a href = "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting#abbreviations" target = "_blank">Abbreviations</a></li>
+  <li><a href = "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting#marking_up_contact_details" target = "_blank">Marking Up Contact Details</a></li>
+  <li><a href = "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting#superscript_and_subscript" target = "_blank">Superscript and Subscript</a></li>
+  <li><a href = "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Advanced_text_formatting#representing_computer_code" target = "_blank">Representing Computer Code</a></li>
+ </ul></p>
+</section>
+        <section class = "main-section" id = "Document_and_Website_Structure"><header>Document and Website Structure</header>
+        <p>In addition to defining individual parts of your page (such as "a paragraph" or "an image"), HTML also boasts a number of block level elements used to define areas of your website (such as "the header", "the navigation menu", "the main content column"). This article looks into how to plan a basic website structure, and write the HTML to represent this structure.</p>
+        <p>Webpages can and will look pretty different from one another, but they all tend to share similar standard components, unless the page is displaying a fullscreen video or game, is part of some kind of art project, or is just badly structured:</p>
+        <ul>
+          <li><strong>header:</strong></li>
+          <p>Usually a big strip across the top with a big heading, logo, and perhaps a tagline. This usually stays the same from one webpage to another.</p>
+          <li><strong>navigation bar:</strong></li>
+          <p>Links to the site's main sections; usually represented by menu buttons, links, or tabs. Like the header, this content usually remains consistent from one webpage to another — having inconsistent navigation on your website will just lead to confused, frustrated users. Many web designers consider the navigation bar to be part of the header rather than an individual component, but that's not a requirement; in fact, some also argue that having the two separate is better for accessibility, as screen readers can read the two features better if they are separate.</p>
+          <li><strong>main content:</strong></li>
+          <p>A big area in the center that contains most of the unique content of a given webpage, for example, the video you want to watch, or the main story you're reading, or the map you want to view, or the news headlines, etc. This is the one part of the website that definitely will vary from page to page!</p>
+          <li><strong>sidebar:</strong></li>
+          <p>Some peripheral info, links, quotes, ads, etc. Usually, this is contextual to what is contained in the main content (for example on a news article page, the sidebar might contain the author's bio, or links to related articles) but there are also cases where you'll find some recurring elements like a secondary navigation system.</p>
+          <li><strong>footer:</strong></li>
+          <p>A strip across the bottom of the page that generally contains fine print, copyright notices, or contact info. It's a place to put common information (like the header) but usually, that information is not critical or secondary to the website itself. The footer is also sometimes used for SEO purposes, by providing links for quick access to popular content.</p>
+        </ul>
+<p>To implement such semantic mark up, HTML provides dedicated tags that you can use to represent such sections, for example:</p>
+<ul>
+  <li>header:<a href = "/en-US/docs/Web/HTML/Element/header" class = "inline-code" target = "_blank"><code>&ltheader></code></a>.</li>
+  <li>navigation bar:<a class = "inline-code" href = "/en-US/docs/Web/HTML/Element/nav" target = "_blank"><code>&ltnav></code></a>.</li>
+  <li>main content:<a class = "inline-code" href = "/en-US/docs/Web/HTML/Element/main" target = "_blank"><code>&ltmain></code></a>,with various content subsections represented by <a class = "inline-code" href = "/en-US/docs/Web/HTML/Element/article" target = "_blank"><code>&ltarticle></code></a>,<a class = "inline-code" href = "/en-US/docs/Web/HTML/Element/section" target = "_blank"><code>&ltsection></code></a>, and <a class = "inline-code" href = "/en-US/docs/Web/HTML/Element/div" target = "_blank"><code>&ltdiv></code></a> elements.</li>
+  <li>sidebar:<a class = "inline-code" href = "/en-US/docs/Web/HTML/Element/aside" target = "_blank"><code>&ltaside></code></a>; often palced inside <a class = "inline-code" href = "/en-US/docs/Web/HTML/Element/main" target = "_blank"><code>&ltmain></code></a>.</li>
+  <li>footer: <a class = "inline-code" href = "/en-US/docs/Web/HTML/Element/footer" target = "_blank"><code>&ltfooter></code></a>.</li>
+  </ul>
+  <p>For now, thats all you need about Document Structure!
+        </section>
+        <section class = "main-section" id = "Debugging"><header>Debugging</header>
+        <p>Writing HTML is fine, but what if something goes wrong, and you can't work out where the error in the code is? This article will introduce you some tools that can help you find and fix errors in HTML.</p>
+        <p>When writing code of some kind, everything is usually fine, until that dreaded moment when an error occurs — you've done something wrong, so your code doesn't work — either not at all, or not quite how you wanted it to. Debugging doesn't have to be scary though — the key to being comfortable with writing and debugging any programming language or code is familiarity with both the language and the tools.</p>
+        <p>Learn more about <a href = "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Debugging_HTML" target = "_blank">debbuging here</a>.</p>
+        </section>
+        <section class = "main-section" id = "Reference"><header>Reference</header><p>All the documentation in this page is taken from <a href = "https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML">MDN</a>.</p></section>
+      </main>
+      </body>
+  </html>
+
+** end of undefined **
+
+** start of undefined **
+
+html{
+  box-sizing:border-box;
+  line-height:1.5;
+}
+body{
+  font-family:sans-serif;
+ color:#4d4e53;
+ min-width:290px;
+}
+main{
+ line-height:1.5;
+}
+.main-section{
+  margin-left:420px;
+}
+.main-section header{
+  font-size:1.8em;
+  font-weight:thin;
+  text-align:left;
+}
+section{
+  margin:40px;
+}
+code:not(.inline-code){
+  display:block;
+  text-align:left;
+  white-space:pre-line;
+  position:relative;
+  word-wrap:normal;
+  background-color:#f7f7f7;
+  padding:15px;
+  margin:10px;
+  border-radius:4px;
+}
+.inline-code code{
+  display:inline-flex;
+  line-height:1;
+  padding:4px;
+}
+#navbar{
+position:fixed;
+left:0px;
+top:0px;
+min-width:290px;
+width:400px;
+height:100%;
+border-right:solid;
+}
+.nav-link{
+  display:block;
+  text-decoration:none;
+  padding:10px 30px;
+  cursor:pointer;
+  color:#4d4e53;
+}
+#navbar li{
+  border-top:1px solid;
+  list-style:none;
+  width:100%;
+  position:relative;
+}
+#navbar header{
+  font-size:2em;
+  padding:10px 30px;
+}
+#navbar ul{
+  padding:0;
+}
+@media (max-width:500px){
+  #navbar{
+    width:200px;
+  }
+  .main-section{
+    width:150px;
+    margin-left:300px;
+  }
+}
+
+** end of undefined **
+
