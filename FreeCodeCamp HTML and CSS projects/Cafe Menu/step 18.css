@@ -1,0 +1,7 @@
+h1, h2, p {
+    text-align: center;
+  }
+  /*We are gonna use new css file because we will have too many styles*/
+body{
+  background-color:brown;
+}
