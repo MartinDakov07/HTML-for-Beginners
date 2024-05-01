@@ -1,0 +1,12 @@
+body {
+    /*background-color: burlywood;*/
+    /*this is how you insert comments in css /'* *'/  (without the up commas) */
+  }
+  
+  h1, h2, p {
+    text-align: center;
+  }
+  
+  #menu {
+    width: 300px;
+  }
