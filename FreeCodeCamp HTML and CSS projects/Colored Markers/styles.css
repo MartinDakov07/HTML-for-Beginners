@@ -1,0 +1,31 @@
+h1 {
+  text-align: center;
+}
+
+.container{
+  background-color:rgb(0,0,0);/*Make our container full black-when green,red and blue are on 0, it gives black*/
+}
+
+.marker {
+  width: 200px;
+  height: 25px;
+  margin: 10px auto;
+}
+
+.one {
+  background-color: red;
+}
+
+.two {
+  background-color: green;
+}
+
+.three {
+  background-color: blue;/*This is step 21*/
+}
+
+
+
+
+
+
