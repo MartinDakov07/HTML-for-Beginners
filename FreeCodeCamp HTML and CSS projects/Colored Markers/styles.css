@@ -1,0 +1,33 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  background-color: rgb(0, 0, 0);
+}
+
+.marker {
+  width: 200px;
+  height: 25px;
+  margin: 10px auto;
+}
+
+.one {
+  background-color: rgb(255, 0, 0);
+}
+
+.two {
+  background-color: rgb(0, 127, 0);/*Green with full 255 power is way ligher than just the word (green),actually green as a word is halfway between black and green, so we make green on half the value to get the exact green color*/
+}/*this is step 24*/
+
+.three {
+  background-color: rgb(0, 0, 255);
+}
+
+
+
+
+
+
+
+
