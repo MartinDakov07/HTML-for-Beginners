@@ -1,0 +1,37 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 0;
+}
+
+.marker {
+  width: 200px;
+  height: 25px;
+  margin: 10px auto;
+}
+
+.one {
+  background-color: rgb(255, 255, 0);/*Info:secondary colors are formed when we combine main colors(red,green,blue). Here we get yellow, which is a secondary color, since we get it from red and green*/
+}/*Note:this is step 28*/
+
+.two {
+  background-color: rgb(0, 255, 0);
+}
+
+.three {
+  background-color: rgb(0, 0, 255);
+}
+
+
+
+
+
+
+
+
+
+
+
