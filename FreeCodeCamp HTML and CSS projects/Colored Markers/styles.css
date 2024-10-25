@@ -1,0 +1,42 @@
+h1 {
+  text-align: center;
+}
+
+.container {
+  background-color: rgb(255, 255, 255);
+  padding: 10px 0;
+}
+
+.marker {
+  width: 200px;
+  height: 25px;
+  margin: 10px auto;
+}
+
+.red {
+  background: linear-gradient(180deg, rgb(122, 74, 14) 0%, rgb(0, 255, 0) 50%, rgb(0, 0, 255) 100%);
+}
+
+.green {
+  background-color: #007F00;
+}
+
+.blue {
+  background-color: hsl(240, 100%, 50%);
+}
+/*Todo:The shades on the top and bottom edges of the marker will be darker, while the one in the middle will be lighter, as if there's a light above it.*/
+/*Note:this is step 57*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
